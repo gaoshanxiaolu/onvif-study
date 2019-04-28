@@ -1,0 +1,17 @@
+---- soap_call___trt__GetStreamUri Matches (4 in 4 files) ----
+Main.c (avstream):146
+    result = soap_call___trt__GetStreamUri(soap, MediaXAddr, NULL, &req, &rep);
+    SOAP_CHECK_ERROR(result, soap, "GetServices");
+
+Onvif.h (onvif):35931
+  int soap_call___trt__GetStreamUri(
+    struct soap *soap,
+    NULL, // char *endpoint = NULL selects default endpoint for this operation
+soapClient.c (onvif):8430
+SOAP_FMAC5 int SOAP_FMAC6 soap_call___trt__GetStreamUri(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _trt__GetStreamUri *trt__GetStreamUri, struct _trt__GetStreamUriResponse *trt__GetStreamUriResponse)
+{	struct __trt__GetStreamUri soap_tmp___trt__GetStreamUri;
+	if (soap_action == NULL)
+soapStub.h (onvif):30033
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call___trt__GetStreamUri(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _trt__GetStreamUri *trt__GetStreamUri, struct _trt__GetStreamUriResponse *trt__GetStreamUriResponse);
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call___trt__StartMulticastStreaming(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _trt__StartMulticastStreaming *trt__StartMulticastStreaming, struct _trt__StartMulticastStreamingResponse *trt__StartMulticastStreamingResponse);
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call___trt__StopMulticastStreaming(struct soap *soap, const char *soap_endpoint, const char *soap_action, struct _trt__StopMulticastStreaming *trt__StopMulticastStreaming, struct _trt__StopMulticastStreamingResponse *trt__StopMulticastStreamingResponse);
